@@ -1,25 +1,49 @@
-# CakePHP 3
+# Laravel folders
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+/storage/oauth-private.key
+/storage/oauth-public.key
+/storage/telescope
+/storage/horizon
 
-/vendor/*
-/config/app.php
+# Laravel environment and secrets
+.env
+.env.*
+!.env.example
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# Log & cache
+*.log
+*.sqlite
+*.sqlite3
+.phpunit.result.cache
 
-/logs/*
-!/logs/empty
+# Laravel Mix & front-end artifacts
+/public/hot
+/public/mix-manifest.json
 
-# CakePHP 2
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Composer / NPM lock files (optional to ignore — up to you)
+# composer.lock
+# package-lock.json
+# yarn.lock
+
+# Docker / Laravel Sail
+docker-compose.override.yml
+
+# PHPUnit coverage
+coverage/
+
+# Misc
+npm-debug.log
+yarn-error.log
