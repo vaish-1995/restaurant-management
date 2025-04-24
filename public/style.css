@@ -1,0 +1,287 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Dashboard Layout */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* Sales Metrics Cards */
+.sales-metric-card {
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+}
+
+.sales-metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Specific card border colors */
+.card:nth-child(1) {
+    border-left-color: #0d6efd; /* Primary blue */
+}
+
+.card:nth-child(2) {
+    border-left-color: #dc3545; /* Danger red */
+}
+
+.card:nth-child(3) {
+    border-left-color: #198754; /* Success green */
+}
+
+/* Badge styling */
+.badge {
+    font-size: 0.75rem;
+    padding: 0.35em 0.65em;
+}
+
+/* Chart Card Styling */
+.chart-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.navbar {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 1030;
+}
+
+.app-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.location-selector .form-select {
+    width: auto;
+    min-width: 180px;
+    font-size: 0.875rem;
+    box-shadow: none !important;
+}
+
+.location-selector .form-select:focus {
+    border-color: #dee2e6;
+}
+
+/* Notification Badge */
+.badge {
+    font-size: 0.6rem;
+    padding: 0.15em 0.4em;
+}
+
+/* Dropdown Menus */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    margin-top: 0.5rem;
+}
+
+.dropdown-header {
+    font-size: 0.75rem;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+/* Avatar */
+.avatar img {
+    object-fit: cover;
+}
+
+/* Icons */
+.nav-link i {
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.nav-link:hover i {
+    color: #0d6efd;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+/* user profile */
+
+/* Profile Page Styles */
+.profile-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile-card .card-body {
+    padding: 2rem;
+}
+
+.profile-details hr {
+    margin: 0.5rem 0;
+}
+
+.profile-details .row {
+    padding: 0.5rem 0;
+}
+
+/* Avatar Styles */
+.avatar-upload {
+    position: relative;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit label {
+    width: 34px;
+    height: 34px;
+    background: #ffffff;
+    border: 1px solid #d2d6de;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-upload .avatar-edit label:hover {
+    background: #f1f1f1;
+    border-color: #d2d6de;
+}
+
+/* Profile Page Styles */
+.profile-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile-picture {
+    border: 3px solid #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+}
+
+.form-control[readonly] {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+}
+
+
+/* Login screen */
+
+/* Login Page Styles */
+.login-card {
+    border-radius: 10px;
+    border: none;
+    margin-top: 5rem;
+}
+
+.login-card .card-header {
+    border-radius: 10px 10px 0 0 !important;
+    padding: 1.5rem;
+}
+
+.login-card .card-body {
+    padding: 2rem;
+}
+
+.login-card .form-control {
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+
+.login-card .btn {
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+/* Add to your style.css */
+.dropdown-item {
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(2px);
+}
+
+.bi-cart {
+    font-size: 1.25rem;
+}
